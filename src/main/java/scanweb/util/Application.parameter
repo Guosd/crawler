@@ -7,3 +7,9 @@ charset:UTF-8
 baseUrl:https://s.weibo.com/weibo/
 #查询内容
 findContent:林志玲
+
+#此URL查询相应评论  get 方式请求数据
+commentUrl:https://s.weibo.com/Ajax_Comment/small?
+
+#设置登录后的cookie，才能获取所有内容
+Cookie:SINAGLOBAL=4816965311351.493.1562464497547; ULV=1562475175588:2:2:2:216375330698.52277.1562475175519:1562464497583; _s_tentry=-; Apache=216375330698.52277.1562475175519; WBStorage=988f187486ad9919|undefined; WBtopGlobal_register_version=8c86b9ca67e1b502; SCF=AjT-je0T1UleR9Wwx-Okl2i2jq4HaFNyTHKGf6sUWfK3KhHBJsHzSekiHLsmgwOrsAXSUxm2Dx9lxhReIb7UT1g.; SUB=_2A25wJQq4DeRhGeVH6FoT9ynLzzmIHXVTU3twrDV8PUNbmtAKLXPxkW9NT0IlBCTk8ZQPENNSmUjmRKfjnGmVUqki; SUBP=0033WrSXqPxfM725Ws9jqgMF55529P9D9Wh2-SW4u.eiHyMAb-.liBzm5JpX5K2hUgL.Foe4e0nES0MNSh-2dJLoIpBLxKqL1hnLBKiki--4iK.RiK.EP7tt; SUHB=09PtMpNYmg4Lx6; ALF=1563080040; SSOLoginState=1562475241; un=1095059264@qq.com

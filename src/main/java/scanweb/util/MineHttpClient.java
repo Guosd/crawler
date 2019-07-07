@@ -1,6 +1,8 @@
 package scanweb.util;
 
 import java.io.IOException;
+import java.util.Map;
+import java.util.Set;
 
 import org.apache.http.HttpResponse;
 import org.apache.http.ParseException;
@@ -16,6 +18,30 @@ public class MineHttpClient {
 		try {
 			HttpClient client = HttpClients.createDefault();
 			HttpGet httpGet = new HttpGet(url);
+			HttpResponse execute = client.execute(httpGet);
+			content = EntityUtils.toString(execute.getEntity(), "UTF-8");
+		} catch (ClientProtocolException e) {
+			System.err.println("通过以下URL获取数据失败\n" + url);
+			e.printStackTrace();
+		} catch (ParseException e) {
+			System.err.println("通过以下URL获取数据失败\n" + url);
+			e.printStackTrace();
+		} catch (IOException e) {
+			System.err.println("通过以下URL获取数据失败\n" + url);
+			e.printStackTrace();
+		}
+		return content;
+	}
+	
+	public static String getWebContent(String url,Map<String,String> map) {
+		String content ="";
+		try {
+			HttpClient client = HttpClients.createDefault();
+			HttpGet httpGet = new HttpGet(url);
+			Set<String> keySet = map.keySet();
+			for (String key : keySet) {
+				httpGet.addHeader(key,CacheUtil.getParam(key));
+			}
 			HttpResponse execute = client.execute(httpGet);
 			content = EntityUtils.toString(execute.getEntity(), "UTF-8");
 		} catch (ClientProtocolException e) {

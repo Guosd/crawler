@@ -121,5 +121,4 @@ public class UrlUtil {
 		return encoder(content, charset,1);
 	}
 
-	
 }
