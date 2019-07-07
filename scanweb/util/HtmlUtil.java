@@ -1,7 +1,7 @@
 package scanweb.util;
 
 /**
- * ¶ÔHtmlÖĞµÄÊı¾İ½øĞĞ½âÎö£¬»ñÈ¡
+ * å¯¹Htmlä¸­çš„æ•°æ®è¿›è¡Œè§£æï¼Œè·å–
  * @author Administrator
  *
  */

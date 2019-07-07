@@ -16,7 +16,7 @@ public class ScanWeb {
 	}
 
 	private static void findResource() {
-		//查询条件需要URL两次编码
+		//鏌ヨ鏉′欢闇�瑕乁RL涓ゆ缂栫爜
 		String url = CacheUtil.getParam("baseUrl")+UrlUtil.encoder(CacheUtil.getParam("findContent"),2);
 		//System.out.println(url);
 		

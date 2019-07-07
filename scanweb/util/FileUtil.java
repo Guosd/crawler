@@ -7,16 +7,16 @@ import java.util.List;
 import java.util.Scanner;
 
 /**
- * 	¶ÁÈ¡ÎÄ¼şÊ¹ÓÃ
+ * 	è¯»å–æ–‡ä»¶ä½¿ç”¨
  * @author Guosd
  *
  */
 public class FileUtil {
 	
 	/**
-	 * ¶ÁÈ¡ÎÄ¼ş
-	 * @param file ÎÄ¼ş
-	 * @return Ê¹ÓÃlist·µ»ØÃ¿Ò»ĞĞ
+	 * è¯»å–æ–‡ä»¶
+	 * @param file æ–‡ä»¶
+	 * @return ä½¿ç”¨listè¿”å›æ¯ä¸€è¡Œ
 	 */
 	public static List<String> readFile(File file) {
 		Scanner sc;
@@ -34,9 +34,9 @@ public class FileUtil {
 	}
 	
 	/**
-	 * ¸ù¾İÂ·¾¶¶ÁÈ¡ÎÄ¼ş
-	 * @param file ÎÄ¼şÂ·¾¶
-	 * @return Ê¹ÓÃlist·µ»ØÃ¿Ò»ĞĞ
+	 * æ ¹æ®è·¯å¾„è¯»å–æ–‡ä»¶
+	 * @param file æ–‡ä»¶è·¯å¾„
+	 * @return ä½¿ç”¨listè¿”å›æ¯ä¸€è¡Œ
 	 */
 	public static List<String> readFile(String path){
 		File file = new File(path);

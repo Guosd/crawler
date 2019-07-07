@@ -5,17 +5,17 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Ö±½ÓÊ¹ÓÃMap½øĞĞ»º´æ
+ * ç›´æ¥ä½¿ç”¨Mapè¿›è¡Œç¼“å­˜
  * @author Guosd
  */
 public class CacheUtil {
 	private static Map<String, String> map = new HashMap<String, String>();
-	//³õÊ¼»¯²ÎÊı
+	//åˆå§‹åŒ–å‚æ•°
 	static {
 		String path = FileUtil.class.getResource("").getPath()+"Application.parameter";
 		List<String> readFile = FileUtil.readFile(path);
 		for(String row : readFile) {
-			//È¥³ı¿ÕĞĞ£¬»¹ÓĞ×¢ÊÍ¡£
+			//å»é™¤ç©ºè¡Œï¼Œè¿˜æœ‰æ³¨é‡Šã€‚
 			if(row.startsWith("#") ||row.trim().length()==0) {
 				continue;
 			}
@@ -25,7 +25,7 @@ public class CacheUtil {
 		}
 	}
 	
-	//»ñÈ¡³õÊ¼»¯²ÎÊı
+	//è·å–åˆå§‹åŒ–å‚æ•°
 	public static String getParam(String key) {
 		return map.get(key);
 	}

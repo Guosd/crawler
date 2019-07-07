@@ -5,15 +5,15 @@ import java.net.URLDecoder;
 import java.net.URLEncoder;
 
 /**
- * Url½âÂëÀà
+ * Urlè§£ç ç±»
  * @author Guosd
  *
  */
 public class UrlUtil {
 	/**
-	 * URL ½øĞĞ½âÂë
-	 * @param content ±àÂëÄÚÈİ
-	 * @param charset ±àÂë×Ö·ûÀàĞÍ
+	 * URL è¿›è¡Œè§£ç 
+	 * @param content ç¼–ç å†…å®¹
+	 * @param charset ç¼–ç å­—ç¬¦ç±»å‹
 	 * @return
 	 */
 	public static String decoder(String content,String charset) {
@@ -29,10 +29,10 @@ public class UrlUtil {
 	
 	
 	/**
-	 * URL ½øĞĞ½âÂë
-	 * @param content ±àÂëÄÚÈİ
-	 * @param charset ±àÂë×Ö·ûÀàĞÍ
-	 * @param count  ×ªÂë´ÎÊı
+	 * URL è¿›è¡Œè§£ç 
+	 * @param content ç¼–ç å†…å®¹
+	 * @param charset ç¼–ç å­—ç¬¦ç±»å‹
+	 * @param count  è½¬ç æ¬¡æ•°
 	 * @return
 	 */
 	public static String decoder(String content,String charset,int count) {
@@ -45,9 +45,9 @@ public class UrlUtil {
 	}
 	
 	/**
-	 * URL ½øĞĞ½âÂë
-	 * @param content ±àÂëÄÚÈİ
-	 * @param count  ×ªÂë´ÎÊı
+	 * URL è¿›è¡Œè§£ç 
+	 * @param content ç¼–ç å†…å®¹
+	 * @param count  è½¬ç æ¬¡æ•°
 	 * @return
 	 */
 	public static String decoder(String content,int count) {
@@ -56,8 +56,8 @@ public class UrlUtil {
 	}
 	
 	/**
-	 * URL ½øĞĞ½âÂë
-	 * @param content ±àÂëÄÚÈİ
+	 * URL è¿›è¡Œè§£ç 
+	 * @param content ç¼–ç å†…å®¹
 	 * @return
 	 */
 	public static String decoder(String content) {
@@ -68,9 +68,9 @@ public class UrlUtil {
 	
 	
 	/**
-	 * URL ½øĞĞ±àÂë
-	 * @param content ±àÂëÄÚÈİ
-	 * @param charset ±àÂë×Ö·ûÀàĞÍ
+	 * URL è¿›è¡Œç¼–ç 
+	 * @param content ç¼–ç å†…å®¹
+	 * @param charset ç¼–ç å­—ç¬¦ç±»å‹
 	 * @return
 	 */
 	public static String encoder(String content,String charset) {
@@ -85,10 +85,10 @@ public class UrlUtil {
 	}
 	
 	/**
-	 * URL ½øĞĞ±àÂë
-	 * @param content ±àÂëÄÚÈİ
-	 * @param charset ±àÂë×Ö·ûÀàĞÍ
-	 * @param count  ×ªÂë´ÎÊı
+	 * URL è¿›è¡Œç¼–ç 
+	 * @param content ç¼–ç å†…å®¹
+	 * @param charset ç¼–ç å­—ç¬¦ç±»å‹
+	 * @param count  è½¬ç æ¬¡æ•°
 	 * @return
 	 */
 	public static String encoder(String content,String charset,int count) {
@@ -101,9 +101,9 @@ public class UrlUtil {
 	}
 	
 	/**
-	 * URL ½øĞĞ±àÂë
-	 * @param content ±àÂëÄÚÈİ
-	 * @param count  ×ªÂë´ÎÊı
+	 * URL è¿›è¡Œç¼–ç 
+	 * @param content ç¼–ç å†…å®¹
+	 * @param count  è½¬ç æ¬¡æ•°
 	 * @return
 	 */
 	public static String encoder(String content,int count) {
@@ -112,8 +112,8 @@ public class UrlUtil {
 	}
 	
 	/**
-	 * URL ½øĞĞ±àÂë
-	 * @param content ±àÂëÄÚÈİ
+	 * URL è¿›è¡Œç¼–ç 
+	 * @param content ç¼–ç å†…å®¹
 	 * @return
 	 */
 	public static String encoder(String content) {

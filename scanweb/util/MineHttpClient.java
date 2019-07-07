@@ -19,13 +19,13 @@ public class MineHttpClient {
 			HttpResponse execute = client.execute(httpGet);
 			content = EntityUtils.toString(execute.getEntity(), "UTF-8");
 		} catch (ClientProtocolException e) {
-			System.err.println("通过以下URL获取数据失败\n" + url);
+			System.err.println("閫氳繃浠ヤ笅URL鑾峰彇鏁版嵁澶辫触\n" + url);
 			e.printStackTrace();
 		} catch (ParseException e) {
-			System.err.println("通过以下URL获取数据失败\n" + url);
+			System.err.println("閫氳繃浠ヤ笅URL鑾峰彇鏁版嵁澶辫触\n" + url);
 			e.printStackTrace();
 		} catch (IOException e) {
-			System.err.println("通过以下URL获取数据失败\n" + url);
+			System.err.println("閫氳繃浠ヤ笅URL鑾峰彇鏁版嵁澶辫触\n" + url);
 			e.printStackTrace();
 		}
 		return content;
